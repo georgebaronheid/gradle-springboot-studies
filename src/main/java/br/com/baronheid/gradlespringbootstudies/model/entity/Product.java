@@ -16,6 +16,7 @@ import java.time.LocalDate;
 @Entity
 @Data
 @Table(name = "TBL_PRODUCT")
+@SequenceGenerator(name = "productSeq", sequenceName = "SQ_PRODUCT", allocationSize = 1)
 public class Product {
 
     @Id
@@ -36,5 +37,8 @@ public class Product {
     @Past
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate manufactureDate;
+
+    @ManyToOne
+    private Category category;
 
 }
