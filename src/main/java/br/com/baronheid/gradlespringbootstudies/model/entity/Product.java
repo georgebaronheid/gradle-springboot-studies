@@ -24,12 +24,14 @@ public class Product {
     @Size(max = 50)
     private String name;
 
+//    Min and max are inclusive
     @Min(value = 0, message = "Price can not be negative")
     private double price;
 
-    private boolean newProdut;
+    private boolean newProduct;
 
+//    Past means that the date must be older than current day
     @Past
-    private LocalDate manufacteDate;
+    private LocalDate manufactureDate;
 
 }
