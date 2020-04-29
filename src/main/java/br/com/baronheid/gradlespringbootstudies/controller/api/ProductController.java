@@ -1,4 +1,4 @@
-package br.com.baronheid.gradlespringbootstudies.controller;
+package br.com.baronheid.gradlespringbootstudies.controller.api;
 
 import br.com.baronheid.gradlespringbootstudies.model.entity.Product;
 import br.com.baronheid.gradlespringbootstudies.model.service.ProductService;
@@ -12,7 +12,7 @@ import java.util.List;
 // RestController allows the controller to be RESTful
 @RestController
 // Route to all subroutes below
-@RequestMapping("/product")
+@RequestMapping("/product-api")
 public class ProductController {
 
     private final ProductService productService;
