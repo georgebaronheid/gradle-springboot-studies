@@ -16,4 +16,8 @@ spring:
       #      URL to access web console
       path: /h2
 
+server:
+  servlet:
+    context-path: /productApi
+
 
